@@ -4,35 +4,59 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>School Managment System</title>
+		<link rel="stylesheet" href="assets/style.css">
+		<title>School Management System</title>
 	</head>
 	<body>
 		<div class="container">
 			<form>
-				<!-- student name -->
-				<div class="from-control">
+				<!-- Student Name -->
+				<div class="form-control">
 					<label for="name">Student Name</label>
 					<input type="text" id="name" placeholder="jo aqra" />
 				</div>
-				<!-- student name -->
+				<!-- Student Name -->
 
-				<!-- student id -->
-				<div class="from-control">
+				<!-- Student ID -->
+				<div class="form-control">
 					<label for="idNumber">Student ID</label>
 					<input type="number" id="idNumber" placeholder="411420876" />
 				</div>
-				<!-- student id -->
+				<!-- Student ID -->
 
-				<!-- student gdpa -->
-				<div class="from-control">
-					<label for="gdpa">Student GDPA</label>
-					<input type="number" id="gdpa" placeholder="3.50" />
+				<!-- Student GPA -->
+				<div class="form-control">
+					<label for="gpa">Student GPA</label>
+					<input type="text" id="gpa" placeholder="3.50" />
 				</div>
-				<!-- student gdpa -->
+				<!-- Student GPA -->
 
-				<button id="submit" type="submit">Add</button>
+				<!--Add Student-->
+				<button id="submit" type="submit">Add a student</button>
+				<!--Add Student -->
 			</form>
+
+			<!-- Delete Student -->
+			<br>
+			<label>Student`s ID to be deleted</label>
+			<br>
+			<input type="search" id="DelID" placeholder="411420876"/>
+			<button id="Delete">Delete</button>
+			<br>
+			<!-- Delete Student -->
 		</div>
+		<br>
+		<!-- Display Students -->
+		<table border="3">
+			<tr>
+				<th>Name</th>
+				<th>ID</th>
+				<th>GPA</th>
+			</tr>
+		</table>
+		<p id="students"></p>
+		<!-- Display Students -->
+		<button id="Display">Display Added Students</button>
 		<script src="./src/main.js"></script>
 	</body>
 </html>
